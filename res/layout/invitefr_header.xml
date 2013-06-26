@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:src="@drawable/arrow" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:background="@drawable/back_partytop"
+        android:hint="친구목록" />
+    <Button 
+        android:id="@+id/backbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="선택완료"/>
+    
+
+
+</LinearLayout>

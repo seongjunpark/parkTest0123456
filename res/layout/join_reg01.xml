@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#dfdfdf"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:background="#F4F4F4"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="펀슈머에 오신 것을 환영합니다."
+        android:textSize="17sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="4dp"
+                    android:text="이메일"
+                    android:textColor="#828282"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/border"
+                    android:hint="ex) funsumer@funsumer.net"
+                    android:padding="10dp"
+                    android:textColor="#262525"
+                    android:textColorHint="#B2B2B2"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="이름(한글)"
+                    android:textColor="#828282"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/myname"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/border"
+                    android:hint="ex) 송중기"
+                    android:padding="10dp"
+                    android:textColor="#262525"
+                    android:textColorHint="#B2B2B2"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="핸드폰"
+                    android:textColor="#828282"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/phone_number"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/border"
+                    android:hint="ex) 010-3345-3345"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:textColor="#262525"
+                    android:textColorHint="#B2B2B2"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="비밀번호"
+                    android:textColor="#828282"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/border"
+                    android:hint="********"
+                    android:padding="10dp"
+                    android:password="true"
+                    android:textColor="#262525"
+                    android:textColorHint="#B2B2B2"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="성별"
+                    android:textColor="#828282"
+                    android:textSize="14sp" />
+
+                <RadioGroup
+                    android:id="@+id/sexgroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/male" >
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/female" >
+                    </RadioButton>
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="학교"
+                    android:textColor="#828282"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/school"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/border"
+                    android:hint=""
+                    android:padding="10dp"
+                    android:textColor="#262525"
+                    android:textColorHint="#B2B2B2"
+                    android:textSize="14sp" />
+                <!-- <AutoCompleteTextView
+                    android:id="@+id/school"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#262525"
+                    android:textSize="14sp" /> -->
+            </LinearLayout>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/go_reg02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="next02"
+            android:textColor="#262525" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+</LinearLayout>

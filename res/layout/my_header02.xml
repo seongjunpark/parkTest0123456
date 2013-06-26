@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#dfdfdf" >
+
+    <ImageView
+        android:id="@+id/notepic"
+        android:layout_width="fill_parent"
+        android:layout_height="220dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/notepic"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp" >
+
+        <ImageView
+            android:id="@+id/profilepic"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/countfriend"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@id/profilepic"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/profilepic"
+            android:src="@drawable/friend" />
+
+        <TextView
+            android:id="@+id/Result_Fnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/countfriend"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@id/countfriend"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <FrameLayout
+            android:id="@+id/voteframe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/countfriend"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/Result_Fnum" >
+
+            <ImageView
+                android:id="@+id/countvote"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/heart"
+                android:visibility="invisible" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/countfriend"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@id/voteframe" >
+
+            <TextView
+                android:id="@+id/Result_Vnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:visibility="invisible" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/result_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/Result_Fnum"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/profilepic"
+            android:textColor="@android:color/white"
+            android:textSize="21sp" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/notepic"
+        android:layout_alignRight="@id/notepic"
+        android:layout_marginBottom="10dp" >
+
+        <ImageView
+            android:id="@+id/novote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="7dp"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/yesvote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="7dp"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/setCurrent_Btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/notepic"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_go_noteleft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="친구목록" />
+
+        <Button
+            android:id="@+id/btn_go_noteright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="파티목록" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_makearticle"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/setCurrent_Btn"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/writebutton"
+        android:onClick="onMakearticle"
+        android:text="포스트 작성하기 ..." />
+
+</RelativeLayout>

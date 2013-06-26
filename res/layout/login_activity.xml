@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/loginpic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:background="#F4222D"
+        android:text="" />
+
+    <ImageView
+        android:id="@+id/funsumer_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/funsumer_logo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp" >
+
+        <!-- Email input text -->
+
+        <EditText
+            android:id="@+id/txtUsername"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rounder_up"
+            android:hint="이메일"
+            android:singleLine="true"
+            android:textSize="15sp" />
+
+        <!-- Password input text -->
+
+        <EditText
+            android:id="@+id/txtPassword"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:background="@drawable/rounder_up"
+            android:hint="비밀번호"
+            android:password="true"
+            android:singleLine="true"
+            android:textSize="15sp" />
+
+        <!-- Login button -->
+
+        <Button
+            android:id="@+id/btn_Login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:text="Login" />
+
+        <Button
+            android:id="@+id/btn_Joinus"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Join us" />
+    </LinearLayout>
+
+</RelativeLayout>
